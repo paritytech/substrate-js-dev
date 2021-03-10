@@ -1,0 +1,21 @@
+name: PR
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  pr:
+    strategy:
+      matrix:
+        step: ['lint']
+    name: ${{ matrix.step }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: ${{ matrix.step }}
+      run: |
+        yarn install
+        yarn ${{ matrix.step }}
