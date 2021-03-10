@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 0.2.0
+## 0.2.0 Mar 9, 2021
 
 - Set `declaration` option to true on tsconfig
 - Remove `testPathIgnorePatterns` from jest config
