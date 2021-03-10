@@ -17,6 +17,9 @@
   "files": [
     "config"
   ],
+  "scripts": {
+    "lint": "eslint"
+  },
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.13.8",
     "@types/jest": "^26.0.20",
