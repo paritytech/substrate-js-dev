@@ -6,7 +6,7 @@
   "bugs": "https://github.com/paritytech/substrate-js-dev/issues",
   "homepage": "https://github.com/paritytech/substrate-js-dev#readme",
   "author": "emostov <32168567+emostov@users.noreply.github.com>",
-  "license": "Apached-2.0",
+  "license": "Apache-2.0",
   "private": false,
   "engines": {
     "node": ">=12"
