@@ -2,14 +2,21 @@
   "name": "@substrate/dev",
   "version": "0.1.0",
   "description": "JS/TS development environment configuration and dependencies for @substrate projects.",
-  "main": "index.js",
   "repository": "https://github.com/paritytech/substrate-js-dev.git",
+  "bugs": "https://github.com/paritytech/substrate-js-dev/issues",
+  "homepage": "https://github.com/paritytech/substrate-js-dev#readme",
   "author": "emostov <32168567+emostov@users.noreply.github.com>",
   "license": "Apached-2.0",
   "private": false,
   "engines": {
     "node": ">=12"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "config"
+  ],
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.13.8",
     "@types/jest": "^26.0.20",
