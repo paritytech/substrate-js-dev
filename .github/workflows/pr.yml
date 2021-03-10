@@ -7,11 +7,15 @@ on:
     branches: [ master ]
 
 jobs:
-  lint:
+  pr:
+    strategy:
+      matrix:
+        step: ['lint']
+    name: ${{ matrix.step }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Lint
+    - name: ${{ matrix.step }}
       run: |
         yarn install
-        yarn lint
+        yarn ${{ matrix.step }}
