@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 0.3.0
+## 0.3.0 Mar 13, 2021
 
 - Remove noUncheckedIndexedAccess in tsconfig.json
 
