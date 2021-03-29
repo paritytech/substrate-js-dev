@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 0.5.0
+
+- ci: Request dependabot reviews from Zeke and Tarik
+
+## 0.4.0 Mar 29, 2021
+
+- Bump deps
+
 ## 0.3.0 Mar 13, 2021
 
 - Remove noUncheckedIndexedAccess in tsconfig.json
