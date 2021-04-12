@@ -1,8 +1,9 @@
 # CHANGELOG
 
-## 0.5.0
+## 0.4.1 Apr 12, 2021
 
-- ci: Request dependabot reviews from Zeke and Tarik
+- ci: Request dependabot reviews
+- Bump deps
 
 ## 0.4.0 Mar 29, 2021
 
