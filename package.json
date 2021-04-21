@@ -7,7 +7,6 @@
   "homepage": "https://github.com/paritytech/substrate-js-dev#readme",
   "author": "emostov <32168567+emostov@users.noreply.github.com>",
   "license": "Apache-2.0",
-  "private": false,
   "publishConfig": {
     "access": "public"
   },
@@ -18,6 +17,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@babel/core": "^7.13.16",
     "@babel/plugin-transform-modules-commonjs": "^7.13.8",
     "@types/jest": "^26.0.20",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
