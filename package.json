@@ -10,6 +10,12 @@
   "publishConfig": {
     "access": "public"
   },
+  "bin": {
+    "substrate-dev-run-lint": "./scripts/substrate-dev-run-lint.cjs",
+    "substrate-dev-run-test": "./scripts/substrate-dev-run-test.cjs",
+    "substrate-exec-eslint": "./scripts/substrate-exec-eslint.cjs",
+    "substrate-exec-tsc": "./scripts/substrate-exec-tsc.cjs"
+  },
   "files": [
     "config"
   ],
