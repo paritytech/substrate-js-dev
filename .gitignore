@@ -103,7 +103,7 @@ dist
 # TernJS port file
 .tern-port
 
-# TernJS 
+# Local yarn files 
 .yarn/*
 !.yarn/releases
 !.yarn/plugins
