@@ -12,6 +12,6 @@ const argv = require('yargs')
     .strict()
     .argv;
 
-const fix = argv['--fix'] ? '--fix' : '';
+const fix = argv.fix ? '--fix' : '';
 
 execSync(`yarn substrate-exec-tsc --noEmit && substrate-exec-eslint . --ext ts ${fix}`);
