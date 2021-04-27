@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 0.5.0 Apr 27, 2021
+
+- Migrate to yarn 2.4.1
+- Bump deps
+
 ## 0.4.1 Apr 12, 2021
 
 - ci: Request dependabot reviews
