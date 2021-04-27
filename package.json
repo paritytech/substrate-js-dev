@@ -17,7 +17,8 @@
     "substrate-exec-tsc": "./scripts/substrate-exec-tsc.cjs"
   },
   "files": [
-    "config"
+    "config",
+    "scripts"
   ],
   "scripts": {
     "lint": "eslint"
