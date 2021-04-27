@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.5.2 Apr 27, 2021
+
+- Add scripts to file field
+
 ## 0.5.1 Apr 27, 2021
 
 - Patch release to fix version
