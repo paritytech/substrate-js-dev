@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.5.1 Apr 27, 2021
+
+- Patch release to fix version
+
 ## 0.5.0 Apr 27, 2021
 
 - Migrate to yarn 2.4.1
