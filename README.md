@@ -30,4 +30,4 @@ $ git tag v0.5.0
 $ git push origin v0.5.0
 ```
 
-7. Setup the tag release in the github repo. 
+7. Create a release from the new tag on GitHub.com. 
