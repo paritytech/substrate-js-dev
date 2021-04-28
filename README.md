@@ -27,7 +27,7 @@ $ yarn npm publish
 
 ```
 $ git tag v0.5.0
-$ git push origin --tags
+$ git push origin v0.5.0
 ```
 
 7. Setup the tag release in the github repo. 
