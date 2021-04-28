@@ -18,7 +18,7 @@ NPM prerequisites: You must be a member of the `@substrate` NPM org and must bel
 
 5. Pull main/master down and follow the commands below.
 
-```
+```bash
 $ yarn npm login
 $ yarn npm publish
 ```
