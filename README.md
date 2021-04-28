@@ -20,3 +20,12 @@ You must first be a member, and developer within the npm @substrate org before b
 $ yarn npm login
 $ yarn npm publish
 ```
+
+6. Setup the git tags with the following commands
+
+```
+$ git tag v0.5.0
+$ git push origin --tags
+```
+
+7. Setup the tag release in the github repo. 
