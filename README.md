@@ -14,6 +14,8 @@ You must first be a member, and developer within the npm @substrate org before b
 
 4. Send a PR up and merge into main/master. 
 
+    * ex: `git commit -m 'chore(release): 0.5.0'`
+
 5. Pull main/master down and follow the commands below.
 
 ```
