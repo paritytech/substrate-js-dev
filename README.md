@@ -4,7 +4,7 @@ JS/TS development environment configuration and dependencies for @substrate proj
 
 ## Release && Publishing
 
-You must first be a member, and developer within the npm @substrate org before being able to publish this package to npm. You must also have 2FA enabled.
+NPM prerequisites: You must be a member of the `@substrate` NPM org and must belong to the `developers` team within the org. (Please make sure you have 2FA enabled.)
 
 1. Create a branch 'name-v0-5-0'.
 
