@@ -25,7 +25,7 @@ $ yarn npm publish
 
 6. Setup the git tags with the following commands
 
-```
+```bash
 $ git tag v0.5.0
 $ git push origin v0.5.0
 ```
