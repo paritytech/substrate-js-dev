@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 0.5.3 May 25, 2021
+
+- Bump deps
+- Remove Dependabot
+
 ## 0.5.2 Apr 27, 2021
 
 - Add scripts to file field
