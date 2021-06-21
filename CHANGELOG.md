@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.5.4 June 21, 2021
+
+- Bump deps
+
 ## 0.5.3 May 25, 2021
 
 - Bump deps
