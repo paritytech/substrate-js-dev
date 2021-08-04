@@ -1,4 +1,4 @@
-#!/usr/bin / env node
+#!/usr/bin/env node
 
 console.log('tsc', process.argv.slice(2).join(' '));
 
