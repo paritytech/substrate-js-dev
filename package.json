@@ -14,6 +14,7 @@
     "substrate-dev-run-lint": "./scripts/substrate-dev-run-lint.cjs",
     "substrate-exec-eslint": "./scripts/substrate-exec-eslint.cjs",
     "substrate-exec-jest": "./scripts/substrate-exec-jest.cjs",
+    "substrate-exec-rimraf": "./scripts/substrate-exec-rimraf.cjs",
     "substrate-exec-tsc": "./scripts/substrate-exec-tsc.cjs"
   },
   "files": [
@@ -34,6 +35,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "jest": "^27.0.6",
     "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
     "ts-jest": "^27.0.3",
     "typescript": "^4.3.5",
     "yargs": "^17.0.1"
