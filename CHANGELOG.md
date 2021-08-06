@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 0.5.5 August 5, 2021
+## 0.5.5 August 6, 2021
 
 - Add rimraf exec script
 - Fix tsc `#!/usr/bin/env node`
