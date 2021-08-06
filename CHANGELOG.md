@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 0.5.5 August 6, 2021
+
+- Add rimraf exec script
+- Fix tsc `#!/usr/bin/env node`
+- Bump Deps
+
 ## 0.5.4 June 21, 2021
 
 - Bump deps
