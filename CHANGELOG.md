@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 0.5.6 October 14, 2021
+
+- Bump deps
+- Bump yarn
+
 ## 0.5.5 August 6, 2021
 
 - Add rimraf exec script
