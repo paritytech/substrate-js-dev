@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 0.5.7 February 7, 2022
+
+- Bump deps
+- Bump yarn
+
 ## 0.5.6 October 14, 2021
 
 - Bump deps
