@@ -967,6 +967,7 @@ __metadata:
     substrate-exec-jest: ./scripts/substrate-exec-jest.cjs
     substrate-exec-rimraf: ./scripts/substrate-exec-rimraf.cjs
     substrate-exec-tsc: ./scripts/substrate-exec-tsc.cjs
+    substrate-update-pjs-deps: ./scripts/substrate-update-pjs-deps.cjs
   languageName: unknown
   linkType: soft
 
