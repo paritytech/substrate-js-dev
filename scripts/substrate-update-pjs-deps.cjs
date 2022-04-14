@@ -52,6 +52,12 @@ const depSpecs = {
     }
 }
 
+/**
+ * This will curl the latest release from github, and parse out the tag_name
+ * 
+ * @param {string} link Latest release link to curl
+ * @returns 
+ */
 function fetchReleaseTag(link) {
     const cmd = `curl --silent ${link}`;
     const res = execSync(cmd).toString();
@@ -60,6 +66,14 @@ function fetchReleaseTag(link) {
     return resJson['tag_name'];
 }
 
+/**
+ * Given a package.json file update all the resolutions and dependencies
+ * that are polkadot-js packages
+ * 
+ * @param {string} path Path to the package.json file
+ * @param {object} config Object contains keys that are package names, and values 
+ * which are their corresponding versions
+ */
 function updatePackageJson(path, config) {
     const rawData = fs.readFileSync(path);
     const packageJson = JSON.parse(rawData);
@@ -68,12 +82,12 @@ function updatePackageJson(path, config) {
 
     for(const packageName of Object.keys(config)) {
         // check and update dependencies key
-        if (Object.keys(deps).includes(packageName)) {
+        if (deps && Object.keys(deps).includes(packageName)) {
             packageJson['dependencies'][packageName] = config[packageName];
         }
 
         // check and update resolutions key
-        if (Object.keys(resolutions).includes(packageName)) {
+        if (resolutions && Object.keys(resolutions).includes(packageName)) {
             packageJson['resolutions'][packageName] = config[packageName];
         }
     }
@@ -81,7 +95,12 @@ function updatePackageJson(path, config) {
     fs.writeFileSync(path, JSON.stringify(packageJson, null, 2).concat('\n'));
 }
 
-// Generator function
+/**
+ * Generator function to recursively lazy iterate through each directory. This searches
+ * for all package.json files in a dir, not including node_modules, and hidden dirs.
+ * 
+ * @param {string} rootPath root path of the repository
+ */
 async function* getFiles(rootPath) {
     const fileNames = await readdir(rootPath);
     for (const fileName of fileNames) {
@@ -106,7 +125,6 @@ async function main(rootPath = './') {
     const packageToVersion = {};
     for (const packageKey of Object.keys(depSpecs)) {
         const packageVersion = fetchReleaseTag(depSpecs[packageKey].releaseLink);
-        
         for (const packageName of depSpecs[packageKey].packages) {
             packageToVersion[`@polkadot/${packageName}`] = packageVersion.substring(1);
         }
@@ -114,8 +132,8 @@ async function main(rootPath = './') {
 
     // Iterate through each file using the generator function and find the package.json
     for await (const path of getFiles(rootPath)) {
-        // GetFiles can return undefined so we make sure it's a string
-        if (typeof path === 'string') {
+        // GetFiles can return undefined so we make sure it's true
+        if (path) {
             updatePackageJson(path, packageToVersion);
         }
     }
@@ -131,4 +149,4 @@ const argv = require('yargs')
     .strict()
     .argv;
 
-main(argv.path);
+main(argv.path).catch(err => console.log(err)).finally(() => process.exit());
