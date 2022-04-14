@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+'use strict';
 
 const fs = require('fs');
 const execSync = require('child_process').execSync;
@@ -99,7 +100,7 @@ async function* getFiles(rootPath) {
     }
 }
 
-async function main() {
+async function main(rootPath = './') {
     // iterate through constants and create an object that stores each packages name
     // to their corresponding versions. 
     const packageToVersion = {};
@@ -111,9 +112,7 @@ async function main() {
         }
     }
 
-    // Iterate through each files and find the package.json
-    // TODO -> dynamic rootPath
-    const rootPath = '.';
+    // Iterate through each file using the generator function and find the package.json
     for await (const path of getFiles(rootPath)) {
         // GetFiles can return undefined so we make sure it's a string
         if (typeof path === 'string') {
@@ -122,4 +121,14 @@ async function main() {
     }
 }
 
-main();
+const argv = require('yargs')
+    .options({
+        '--path': {
+            description: 'Path to directory',
+            type: 'string'
+        }
+    })
+    .strict()
+    .argv;
+
+main(argv.path);
