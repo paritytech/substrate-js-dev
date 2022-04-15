@@ -59,7 +59,7 @@ const depSpecs = {
  * This will fetch the latest release from github, returns the response as
  * a JSON object.
  * 
- * @param {string} link Latest release link to curl
+ * @param {string} url Latest release link
  * @returns 
  */
 async function fetchRelease(url, method = 'GET') {
