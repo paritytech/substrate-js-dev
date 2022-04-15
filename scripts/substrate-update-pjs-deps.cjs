@@ -88,7 +88,9 @@ async function fetchRelease(url, method = 'GET') {
                 data.push(chunk);
             });
 
-            res.on('end', () => resolve(JSON.parse(Buffer.concat(data).toString())));
+            res.on('end', function() {
+                resolve(JSON.parse(Buffer.concat(data).toString()))
+            });
         })
 
         req.on('error', reject);
