@@ -130,7 +130,8 @@ async function main(rootPath = './') {
      */
     const pathsToIgnore = [
         'node_modules',
-        'build'
+        'build',
+        'lib',
     ];
     // iterate through constants and create an object that stores each packages name
     // to their corresponding versions. 
