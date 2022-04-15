@@ -2,7 +2,7 @@
 'use strict';
 
 const fs = require('fs');
-const execSync = require('child_process').execSync;
+const https = require('https');
 const { resolve } = require('path');
 const { readdir, stat } = require('fs').promises;
 
@@ -56,17 +56,45 @@ const depSpecs = {
 }
 
 /**
- * This will curl the latest release from github, and parse out the tag_name
+ * This will fetch the latest release from github, returns the response as
+ * a JSON object.
  * 
  * @param {string} link Latest release link to curl
  * @returns 
  */
-function fetchReleaseTag(link) {
-    const cmd = `curl --silent ${link}`;
-    const res = execSync(cmd).toString();
-    const resJson = JSON.parse(res);
+async function fetchRelease(url, method = 'GET') {
+    const [h, ...args] = url.split('://')[1].split('/');
+    const [host, port] = h.split(':');
 
-    return resJson['tag_name'];
+    const options = {
+        method,
+        host,
+        port: port || 443,
+        path: '/' + args.join('/'),
+        headers: {
+            'User-Agent': 'request'
+        }
+    };
+
+    return new Promise(function(resolve, reject) {
+        const req = https.request(options, function (res) {
+            if (res.statusCode < 200 || res.statusCode >= 300) {
+                return reject(new Error(`Status Code: ${res.statusCode}`));
+            }
+
+            const data = [];
+
+            res.on('data', chunk => {
+                data.push(chunk);
+            });
+
+            res.on('end', () => resolve(JSON.parse(Buffer.concat(data).toString())));
+        })
+
+        req.on('error', reject);
+
+        req.end();
+    })
 }
 
 /**
@@ -137,7 +165,7 @@ async function main(rootPath = './') {
     // to their corresponding versions. 
     const packageToVersion = {};
     for (const packageKey of Object.keys(depSpecs)) {
-        const packageVersion = fetchReleaseTag(depSpecs[packageKey].releaseLink);
+        const packageVersion = (await fetchRelease(depSpecs[packageKey].releaseLink))['tag_name'];
         for (const packageName of depSpecs[packageKey].packages) {
             packageToVersion[`@polkadot/${packageName}`] = packageVersion.substring(1);
         }
