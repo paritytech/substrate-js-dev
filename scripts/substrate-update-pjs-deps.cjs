@@ -64,12 +64,12 @@ const depSpecs = {
  */
 async function fetchRelease(url, method = 'GET') {
     const [h, ...args] = url.split('://')[1].split('/');
-    const [host, port] = h.split(':');
+    const [host, _port] = h.split(':');
 
     const options = {
         method,
         host,
-        port: port || 443,
+        port: 443,
         path: '/' + args.join('/'),
         headers: {
             'User-Agent': 'request'
@@ -173,7 +173,6 @@ async function main(rootPath = './') {
 
     // Iterate through each file using the generator function and find the package.json
     for await (const path of getFiles(rootPath, pathsToIgnore)) {
-        // GetFiles can return undefined so we make sure it's true
         if (path) {
             updatePackageJson(path, packageToVersion);
         }
