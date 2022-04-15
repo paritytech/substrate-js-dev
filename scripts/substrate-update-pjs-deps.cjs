@@ -125,7 +125,12 @@ function updatePackageJson(path, config) {
         }
     }
 
-    fs.writeFileSync(path, JSON.stringify(packageJson, null, 2).concat('\n'));
+    try {
+        fs.writeFileSync(path, JSON.stringify(packageJson, null, 2).concat('\n'));
+        console.log(`Succesfully updated => ${path}`);
+    } catch (e) {
+        console.error(e)
+    }
 }
 
 /**
@@ -167,7 +172,8 @@ async function main(rootPath = './') {
     // to their corresponding versions. 
     const packageToVersion = {};
     for (const packageKey of Object.keys(depSpecs)) {
-        const packageVersion = (await fetchRelease(depSpecs[packageKey].releaseLink))['tag_name'];
+        const packageRelease = await fetchRelease(depSpecs[packageKey].releaseLink);
+        const packageVersion = packageRelease['tag_name'];
         for (const packageName of depSpecs[packageKey].packages) {
             packageToVersion[`@polkadot/${packageName}`] = packageVersion.substring(1);
         }
