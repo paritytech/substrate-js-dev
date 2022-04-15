@@ -62,12 +62,12 @@ const depSpecs = {
  * @param {string} url Latest release link
  * @returns 
  */
-async function fetchRelease(url, method = 'GET') {
+async function fetchRelease(url) {
     const [h, ...args] = url.split('://')[1].split('/');
     const [host, _port] = h.split(':');
 
     const options = {
-        method,
+        method: 'GET',
         host,
         port: 443,
         path: '/' + args.join('/'),
