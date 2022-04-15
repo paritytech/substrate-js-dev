@@ -6,6 +6,9 @@ const execSync = require('child_process').execSync;
 const { resolve } = require('path');
 const { readdir, stat } = require('fs').promises;
 
+/**
+ * polkadot-js package information, and specifications
+ */
 const depSpecs = {
     api: {
         releaseLink: 'https://api.github.com/repos/polkadot-js/api/releases/latest',
@@ -100,19 +103,21 @@ function updatePackageJson(path, config) {
  * for all package.json files in a dir, not including node_modules, and hidden dirs.
  * 
  * @param {string} rootPath root path of the repository
+ * @param {array} ignorePaths an array of paths to ignore
  */
-async function* getFiles(rootPath) {
+async function* getFiles(rootPath, ignorePaths) {
     const fileNames = await readdir(rootPath);
     for (const fileName of fileNames) {
         const path = resolve(rootPath, fileName);
-        if (path.endsWith('node_modules')) {
-            // Do not traverse any node_modules directories
-            yield;
-        } else if (path.split('/').slice(-1)[0].startsWith('.')) {
+        const curPath = path.split('/').slice(-1)[0];
+        if (ignorePaths.includes(curPath)) {
+            // Do not traverse any path that is ignored
+            continue;
+        } else if (curPath.startsWith('.')) {
             // Do no traverse any hidden directories
-            yield;
+            continue;
         } else if ((await stat(path)).isDirectory()) {
-            yield* getFiles(path);
+            yield* getFiles(path, ignorePaths);
         } else if (path.endsWith('package.json')) {
             yield path;
         }
@@ -120,6 +125,13 @@ async function* getFiles(rootPath) {
 }
 
 async function main(rootPath = './') {
+    /**
+     * Paths to ignore when travesing a directions
+     */
+    const pathsToIgnore = [
+        'node_modules',
+        'build'
+    ];
     // iterate through constants and create an object that stores each packages name
     // to their corresponding versions. 
     const packageToVersion = {};
@@ -131,7 +143,7 @@ async function main(rootPath = './') {
     }
 
     // Iterate through each file using the generator function and find the package.json
-    for await (const path of getFiles(rootPath)) {
+    for await (const path of getFiles(rootPath, pathsToIgnore)) {
         // GetFiles can return undefined so we make sure it's true
         if (path) {
             updatePackageJson(path, packageToVersion);
