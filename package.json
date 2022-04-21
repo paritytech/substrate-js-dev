@@ -1,6 +1,6 @@
 {
   "name": "@substrate/dev",
-  "version": "0.5.7",
+  "version": "0.6.0",
   "description": "JS/TS development environment configuration and dependencies for @substrate projects.",
   "repository": "https://github.com/paritytech/substrate-js-dev.git",
   "bugs": "https://github.com/paritytech/substrate-js-dev/issues",
