@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 0.6.0 April 21, 2022
+
+### Features
+
+- feat: add script to update all polkadot-js deps, and resolutions to latest ([#63](https://github.com/paritytech/substrate-js-dev/pull/63)) ([f26cd26](https://github.com/paritytech/substrate-js-dev/commit/f26cd26dd94570681cb43162cd5812db346880b7))
+
+### Chore
+
+- fix: bump yarn ([#62](https://github.com/paritytech/substrate-js-dev/pull/62)) ([452df66](https://github.com/paritytech/substrate-js-dev/commit/452df66751619df86a17f683414079417ce89eb8))
+
 ## 0.5.7 February 7, 2022
 
 - Bump deps
