@@ -1,5 +1,4 @@
 #!/usr/bin/env node
+const importBinary = require('./importBinary.cjs');
 
-console.log('tsc', process.argv.slice(2).join(' '));
-
-require('typescript/lib/tsc');
+importBinary('tsc', 'typescript/lib/tsc');
