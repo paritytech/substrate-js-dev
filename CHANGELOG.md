@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.6.1 May 03, 2022
+
+### Bug Fixes
+
+- fix(deps): update typescript ([#66](https://github.com/paritytech/substrate-js-dev/pull/66)) ([5002b9c](https://github.com/paritytech/substrate-js-dev/commit/5002b9ca78fb76d2a12707569c50c9a20eaa0286))
+- fix: update deps, and add importBinary script ([#67](https://github.com/paritytech/substrate-js-dev/pull/67)) ([d30480d](https://github.com/paritytech/substrate-js-dev/commit/d30480dac58121634e6a8dcc8bd0e4345f07a9f9))
+
 ## 0.6.0 April 21, 2022
 
 ### Features
