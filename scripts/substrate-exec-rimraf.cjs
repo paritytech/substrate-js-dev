@@ -1,5 +1,4 @@
 #!/usr/bin/env node
+const importBinary = require('./importBinary.cjs');
 
-console.log('rimraf', process.argv.slice(2).join(' '));
-
-require('rimraf/bin');
+importBinary('rimraf', 'rimraf/bin');

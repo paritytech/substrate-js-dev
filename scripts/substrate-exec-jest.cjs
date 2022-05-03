@@ -1,5 +1,4 @@
 #!/usr/bin/env node
+const importBinary = require('./importBinary.cjs');
 
-console.log('jest', process.argv.slice(2).join(' '));
-
-require('jest-cli/bin/jest');
+importBinary('jest', 'jest-cli/bin/jest');

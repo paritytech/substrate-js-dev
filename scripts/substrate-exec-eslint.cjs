@@ -1,5 +1,4 @@
 #!/usr/bin/env node
+const importBinary = require('./importBinary.cjs');
 
-console.log('eslint', process.argv.slice(2).join(' '));
-
-require('eslint/bin/eslint');
+importBinary('eslint', 'eslint/bin/eslint');
