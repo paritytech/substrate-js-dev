@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+// Copyright 2022 Parity Technologies (UK) Ltd.
+
 'use strict';
 
 const fs = require('fs');
