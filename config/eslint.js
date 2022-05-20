@@ -1,3 +1,5 @@
+// Copyright 2022 Parity Technologies (UK) Ltd.
+
 module.exports = {
 	extends: [
 		'eslint:recommended',
