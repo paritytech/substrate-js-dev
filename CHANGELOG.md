@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 0.6.2 June 07, 2022
+
+### Bug Fixes
+
+- fix(deps): update typescript, and residual deps ([#70](https://github.com/paritytech/substrate-js-dev/pull/70)) ([fd03383](https://github.com/paritytech/substrate-js-dev/commit/fd03383e5950c780dd64c14a6249d9543de9a7e4))
+
+### Chores
+
+- chore(license): apply proper licensing and giving polkadot-js copyright credit ([#69](https://github.com/paritytech/substrate-js-dev/pull/69)) ([fc86b81](https://github.com/paritytech/substrate-js-dev/commit/fc86b814bf9f78001d19193fbcf3a4fd73dffdb2))
+
 ## 0.6.1 May 03, 2022
 
 ### Bug Fixes
