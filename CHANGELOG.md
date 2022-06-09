@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 0.6.2 June 07, 2022
+## 0.6.2 June 09, 2022
 
 ### Bug Fixes
 
