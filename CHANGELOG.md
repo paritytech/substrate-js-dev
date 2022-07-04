@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 0.6.3 July 04, 2022
+
+### Chores
+
+- chore(deps): update dependencies ([#70](https://github.com/paritytech/substrate-js-dev/pull/73)) ([6bd0409](https://github.com/paritytech/substrate-js-dev/commit/6bd04098f5124d4fba6ce9f570f688c666855ac0))
+- chore(yarn): bump yarn ([#72](https://github.com/paritytech/substrate-js-dev/pull/72)) ([20882dc](https://github.com/paritytech/substrate-js-dev/commit/20882dc61e01003f29b694e7b71b0502131a4e45))
+
 ## 0.6.2 June 09, 2022
 
 ### Bug Fixes
