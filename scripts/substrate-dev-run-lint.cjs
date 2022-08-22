@@ -9,17 +9,14 @@
 // https://github.com/polkadot-js/dev/blob/ce1831b8d17a41211f99fa71551450524d9bb61e/packages/dev/scripts/polkadot-dev-run-lint.mjs
 
 const execSync = require('./execSync.cjs');
+const args = process.argv.slice(2).join(' ');
 
-const argv = require('yargs')
-    .options({
-        '--fix': {
-            description: 'Eslint --fix flag',
-            type: 'boolean'
-        }
-    })
-    .strict()
-    .argv;
+const checkArgs = process.argv.slice(2).filter((val) => {
+    return val.split(' ').length > 1;
+});
 
-const fix = argv.fix ? '--fix' : '';
-
-execSync(`yarn substrate-exec-tsc --noEmit && substrate-exec-eslint . --ext ts ${fix}`);
+if (checkArgs.length === 0) {
+    execSync(`yarn substrate-exec-tsc --noEmit && substrate-exec-eslint . --ext ts ${args}`);
+} else {
+    console.warn(`Incorrect input. String arguments can't have spaces: ${checkArgs.join(' - ')}`)
+}
