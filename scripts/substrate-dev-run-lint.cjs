@@ -11,4 +11,12 @@
 const execSync = require('./execSync.cjs');
 const args = process.argv.slice(2).join(' ');
 
-execSync(`yarn substrate-exec-tsc --noEmit && substrate-exec-eslint . --ext ts ${args}`);
+const checkArgs = process.argv.slice(2).filter((val) => {
+    return val.split(' ').length > 1;
+});
+
+if (checkArgs.length === 0) {
+    execSync(`yarn substrate-exec-tsc --noEmit && substrate-exec-eslint . --ext ts ${args}`);
+} else {
+    console.warn(`Incorrect input. String arguments can't have spaces: ${checkArgs.join(' - ')}`)
+}
