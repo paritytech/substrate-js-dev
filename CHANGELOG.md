@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## 0.6.4 August 23, 2022
+
+### Chores
+
+- chore(deps): update deps ([#76](https://github.com/paritytech/substrate-js-dev/pull/76)) ([5108885](https://github.com/paritytech/substrate-js-dev/commit/5108885416481f25045e7e6dd88b71a74eb20237))
+
+### Bug Fixes
+
+- fix: let dev run lint take in any args ([#75](https://github.com/paritytech/substrate-js-dev/pull/75)) ([c8dd50d](https://github.com/paritytech/substrate-js-dev/commit/c8dd50dd64402fccfaf75a7e2c887df2cf472175))
+
 ## 0.6.3 July 04, 2022
 
 ### Chores
