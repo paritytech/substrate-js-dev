@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## 0.6.4 August 23, 2022
+## 0.6.4 August 26, 2022
 
 ### Chores
 
