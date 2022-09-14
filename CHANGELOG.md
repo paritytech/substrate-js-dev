@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 0.6.5 September 14, 2022
+
+### Bug Fixes
+
+- fix: add eslint plugin as top level require ([#83](https://github.com/paritytech/substrate-js-dev/pull/83)) ([a869f04](https://github.com/paritytech/substrate-js-dev/commit/a869f042439e6272ec081a980c3665075f7cb93a))
+
+### Chores
+
+- chore(yarn): bump yarn to 3.2.3 ([#81](https://github.com/paritytech/substrate-js-dev/pull/81)) ([2903a94](https://github.com/paritytech/substrate-js-dev/commit/2903a944fceacd33c82d7158d8d6257518f90c0b))
+- chore(yarn): bump yarn ([#80](https://github.com/paritytech/substrate-js-dev/pull/80)) ([8b12cca](https://github.com/paritytech/substrate-js-dev/commit/8b12cca84ca9b45027b2c4152fa9244f12cfd498))
+- chore(deps): update typescript ([#79](https://github.com/paritytech/substrate-js-dev/pull/79)) ([b386062](https://github.com/paritytech/substrate-js-dev/commit/b386062e952d010dc348b610024e7ca1d96fff4a))
+
 ## 0.6.4 August 26, 2022
 
 ### Chores
