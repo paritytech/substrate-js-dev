@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## 0.6.6 January 17, 2023
+
+### Chores
+
+- chore(yarn): bump yarn ([#85](https://github.com/paritytech/substrate-js-dev/pull/85)) ([6ae963f](https://github.com/paritytech/substrate-js-dev/commit/6ae963f4ab7f25cc4d3a425000dbfca3a2b4f180))
+- chore(deps): update typescript ([#90](https://github.com/paritytech/substrate-js-dev/pull/90)) ([5e019a7](https://github.com/paritytech/substrate-js-dev/commit/5e019a793bfa24cbf0d054604a23370bec06fb53))
+- chore(yarn): bump yarn to 3.3.1 ([#92](https://github.com/paritytech/substrate-js-dev/pull/92)) ([880f735](https://github.com/paritytech/substrate-js-dev/commit/880f735c0ac0fe12629fd6386177b9693217bc82))
+- build(deps): bump path-parse from 1.0.6 to 1.0.7 ([#86](https://github.com/paritytech/substrate-js-dev/pull/86)) ([870898d](https://github.com/paritytech/substrate-js-dev/commit/870898de1e14db80e861511418b167565c012a3f))
+- build(deps): bump tmpl from 1.0.4 to 1.0.5 ([#87](https://github.com/paritytech/substrate-js-dev/pull/87)) ([cea1576](https://github.com/paritytech/substrate-js-dev/commit/cea15764b91c144bdce24bcc8d2c85f04cbf25c0))
+- build(deps): bump json5 from 2.2.1 to 2.2.3 ([#89](https://github.com/paritytech/substrate-js-dev/pull/89)) ([478085e](https://github.com/paritytech/substrate-js-dev/commit/478085ef8ea5ae8018642f23c4ffa953cfaa04c0))
+- build(deps): bump tar from 6.1.0 to 6.1.13 ([#91](https://github.com/paritytech/substrate-js-dev/pull/91)) ([4674880](https://github.com/paritytech/substrate-js-dev/commit/46748803cfdeda911d2f961937268d4a45044fce))
+
 ## 0.6.5 September 14, 2022
 
 ### Bug Fixes
