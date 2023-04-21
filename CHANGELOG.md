@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 0.6.7 April 21, 2023
+
+### Chores
+
+- build(deps): bump http-cache-semantics from 4.1.0 to 4.1.1 ([#94](https://github.com/paritytech/substrate-js-dev/pull/94)) ([6504656](https://github.com/paritytech/substrate-js-dev/commit/650465648201330674f2cc189f6e1f4632d4e49f))
+- chore(deps): update eslint deps ([#95](https://github.com/paritytech/substrate-js-dev/pull/95)) ([55db83a](https://github.com/paritytech/substrate-js-dev/commit/55db83a2f2b95fad475cda89171160191e7ec2ba))
+- chore(deps): update jest deps ([#97](https://github.com/paritytech/substrate-js-dev/pull/97)) ([2467ff4](https://github.com/paritytech/substrate-js-dev/commit/2467ff429701c278632032a32431c92c8907e1b8))
+- chore(deps): update @typescript-eslint/parser ([#98](https://github.com/paritytech/substrate-js-dev/pull/98)) ([8d19950](https://github.com/paritytech/substrate-js-dev/commit/8d19950621c50d9ca9c632b29592a5f7c6ca710d))
+
 ## 0.6.6 January 17, 2023
 
 ### Chores
