@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 0.7.0 April 23, 2023
+
+### Breaking Changes
+
+- chore(deps)!: update typescript ([#101](https://github.com/paritytech/substrate-js-dev/pull/101)) ([d68f5fb](https://github.com/paritytech/substrate-js-dev/commit/d68f5fb5868be10a63f4363fd3b39659e3463be5))
+
+### Chores
+
+- chore(yarn): bump yarn ([#102](https://github.com/paritytech/substrate-js-dev/pull/102)) ([f35578f](https://github.com/paritytech/substrate-js-dev/commit/f35578f6d137adc364bb70053207d6904aca325f))
+- chore(author): update author ([#100](https://github.com/paritytech/substrate-js-dev/pull/100)) ([3448db7](https://github.com/paritytech/substrate-js-dev/commit/3448db7b79ef5d81203610a679bd01145e7b17dc))
+
 ## 0.6.7 April 21, 2023
 
 ### Chores
