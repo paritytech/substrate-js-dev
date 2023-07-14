@@ -41,5 +41,5 @@
     "typescript": "^5.0.4",
     "yargs": "^17.5.1"
   },
-  "packageManager": "yarn@3.5.0"
+  "packageManager": "yarn@3.6.1"
 }
