@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 0.7.1 November 17, 2023
+
+### CI
+
+- ci: add semantic title check  ([#109](https://github.com/paritytech/substrate-js-dev/pull/109)) ([d204d53](https://github.com/paritytech/substrate-js-dev/commit/d204d5300553a831634b63b581e6d31124c60ec6))
+
+### Chores
+
+- chore(deps): update all deps ([#114](https://github.com/paritytech/substrate-js-dev/pull/114)) ([4f49d0e](https://github.com/paritytech/substrate-js-dev/commit/4f49d0e38bfdba09806a0d1b37074cf21403af29))
+- chore(yarn): bump yarn to 4.0.2 ([#112](https://github.com/paritytech/substrate-js-dev/pull/112)) ([476185c](https://github.com/paritytech/substrate-js-dev/commit/476185c19f56b1a07a5f3fa77edf9a8c3d031627))
+- chore(yarn): bump yarn ([#108](https://github.com/paritytech/substrate-js-dev/pull/108)) ([86faa12](https://github.com/paritytech/substrate-js-dev/commit/86faa129c8cd201b710620ba56cb428966a6c5bf))
+- chore(deps): update deps ([#107](https://github.com/paritytech/substrate-js-dev/pull/107)) ([ccde3de](https://github.com/paritytech/substrate-js-dev/commit/ccde3decd4523b93b352b634d654a6ceba08c7ca))
+- chore(yarn): bump yarn ([#105](https://github.com/paritytech/substrate-js-dev/pull/105)) ([446dace](https://github.com/paritytech/substrate-js-dev/commit/446dace8c46e5c3553cc48a64aa39a7da5927c3b))
+- build(deps): bump semver from 6.3.0 to 6.3.1 ([#104](https://github.com/paritytech/substrate-js-dev/pull/104)) ([df1cec8](https://github.com/paritytech/substrate-js-dev/commit/df1cec87e7c69a983f57c8212b81342287031890))
+- build(deps): bump word-wrap from 1.2.3 to 1.2.4 ([#106](https://github.com/paritytech/substrate-js-dev/pull/106)) ([a81d81b](https://github.com/paritytech/substrate-js-dev/commit/a81d81b18a1ceedaf17dd5e41a7219a59adad5d4))
+- build(deps): bump actions/checkout from 3 to 4 ([#110](https://github.com/paritytech/substrate-js-dev/pull/110)) ([d65ad18](https://github.com/paritytech/substrate-js-dev/commit/d65ad18491d9d83771ed8a86c4e48f99ecad4ea2))
+- build(deps): bump @babel/traverse from 7.21.4 to 7.23.3 ([#113](https://github.com/paritytech/substrate-js-dev/pull/113)) ([d5b3631](https://github.com/paritytech/substrate-js-dev/commit/d5b36319450d7191a7d2e660ee76d2b88858dac1))
+
 ## 0.7.0 April 23, 2023
 
 ### Breaking Changes
