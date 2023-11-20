@@ -107,3 +107,5 @@ dist
 .yarn/*
 !.yarn/releases
 !.yarn/plugins
+
+**/.DS_Store
