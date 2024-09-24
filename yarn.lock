@@ -3799,14 +3799,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picomatch@npm:^2.0.4, picomatch@npm:^2.2.3":
-  version: 2.2.3
-  resolution: "picomatch@npm:2.2.3"
-  checksum: 10/f1ea1c812298dd1082f2671af34c53b85a0a9ffd7c51d1b9e915866c1b63eb454af898183c82e697b69d277cd08fa5b697ac25e99d235ee8cd379fcb6da4f625
-  languageName: node
-  linkType: hard
-
-"picomatch@npm:^2.3.1":
+"picomatch@npm:^2.0.4, picomatch@npm:^2.2.3, picomatch@npm:^2.3.1":
   version: 2.3.1
   resolution: "picomatch@npm:2.3.1"
   checksum: 10/60c2595003b05e4535394d1da94850f5372c9427ca4413b71210f437f7b2ca091dbd611c45e8b37d10036fa8eade25c1b8951654f9d3973bfa66a2ff4d3b08bc
