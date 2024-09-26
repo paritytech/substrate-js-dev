@@ -1,5 +1,28 @@
 # CHANGELOG
 
+## 0.8.0 September 26, 2024
+
+### Breaking Changes
+
+- chore(deps): update deps ([#126](https://github.com/paritytech/substrate-js-dev/pull/126)) ([755ee6f](https://github.com/paritytech/substrate-js-dev/commit/755ee6f871d23dac9d277289ae0cbde587320d28))
+
+    **NOTE** : This PR updates Typescript from `^5.4.5` to `^5.6.2` and in Typescript 5.5 release some deprecated options (mentioned in the [announcement](https://devblogs.microsoft.com/typescript/announcing-typescript-5-5/#disabling-features-deprecated-in-typescript-5.0)) are disabled. You can find an example in the related [PR](https://github.com/paritytech/substrate-js-dev/pull/126).
+
+- chore(deps): update deps ([#122](https://github.com/paritytech/substrate-js-dev/pull/122)) ([58fe47c](https://github.com/paritytech/substrate-js-dev/commit/58fe47c55610a797c2e780c5cfef0f3dd2fae7ca))
+
+    **NOTE** : This PR updates `typescript-eslint` packages from `v6.X.X^` to `v7.X.X` which requires `Node.js` engine in versions `^18.18.0 || >=20.0.0`. This means that support for Node 16, 19, and Node 18 versions prior to `18.18.0` are dropped (*Note that this is the same requirement that ESLint v9 will impose*). You can find more information in the related [PR](https://github.com/paritytech/substrate-js-dev/pull/122).
+
+### Chores
+
+- chore(yarn): bump yarn to 4.5.0 ([#125](https://github.com/paritytech/substrate-js-dev/pull/125)) ([d59b648](https://github.com/paritytech/substrate-js-dev/commit/d59b64824c62773c82893f85d1aa3b987e2ff392))
+- build(deps): bump micromatch from 4.0.4 to 4.0.8 ([#124](https://github.com/paritytech/substrate-js-dev/pull/124)) ([d157b19](https://github.com/paritytech/substrate-js-dev/commit/d157b190508544f948775b44fcd9cebe0b68b0cc))
+- build(deps): bump braces from 3.0.2 to 3.0.3 ([#123](https://github.com/paritytech/substrate-js-dev/pull/123)) ([5e0daa4](https://github.com/paritytech/substrate-js-dev/commit/5e0daa4c27a43c6cc57b831d7369db99f1086d71))
+- chore(yarn): bump yarn to 4.2.2 ([#121](https://github.com/paritytech/substrate-js-dev/pull/121)) ([dff21a1](https://github.com/paritytech/substrate-js-dev/commit/dff21a1bcab8adb6992e6eb3552444ef36f27066))
+- build(deps): bump tar from 6.1.13 to 6.2.1 ([#120](https://github.com/paritytech/substrate-js-dev/pull/120)) ([1dc92ef](https://github.com/paritytech/substrate-js-dev/commit/1dc92eff492347d9c2dfe6dd4e88428ff7d11d1e))
+- build(deps): bump ip from 1.1.5 to 1.1.9 ([#118](https://github.com/paritytech/substrate-js-dev/pull/118)) ([f2c37b8](https://github.com/paritytech/substrate-js-dev/commit/f2c37b8dffce8cc95edf10e5790ebd6629324c91))
+- chore(yarn): update berry to 4.1.0 ([#117](https://github.com/paritytech/substrate-js-dev/pull/117)) ([f863c5a](https://github.com/paritytech/substrate-js-dev/commit/f863c5a40fe74350ff98e19630ec22ff0e69f3c6))
+- chore: dedupe ([#116](https://github.com/paritytech/substrate-js-dev/pull/116)) ([b862e69](https://github.com/paritytech/substrate-js-dev/commit/b862e69f354480a31fc6eacf43a10a268b86fbc6))
+
 ## 0.7.1 November 17, 2023
 
 ### CI
