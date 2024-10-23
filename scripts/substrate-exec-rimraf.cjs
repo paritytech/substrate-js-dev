@@ -12,6 +12,7 @@ const fs = require('fs');
     
     for (const dir of dirs) {
         if (fs.existsSync(dir)) {
+          console.log(`rimraf-exec: ${dir}`)
           fs.rmSync(dir, { force: true, recursive: true });
         } else {
             console.warn(`rimraf-exec: ${dir} is an invalid file path and does not exist`)
