@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 0.9.0 October 24, 2024
+
+### Breaking Changes
+
+- fix!: write a custom rimraf ([#129](https://github.com/paritytech/substrate-js-dev/pull/129)) ([5784cea](https://github.com/paritytech/substrate-js-dev/commit/5784ceac9fe7541e22f4fdcab3a3965fe70a99db))
+    - This removes rimraf and adds our own custom implementation. This means there is no longer glob support.
+
+
 ## 0.8.0 September 26, 2024
 
 ### Breaking Changes
